@@ -1,4 +1,4 @@
-# <h1 align="center">Laporan Praktikum Modul 1 Pengenalan C++ <br> Nama Modul</h1>
+# <h1 align="center">Laporan Praktikum Modul 1 <br> Pengenalan C++</h1>
 <p align="center">Rafi Maheswara - 103112400135</p>
 
 ## Dasar Teori
