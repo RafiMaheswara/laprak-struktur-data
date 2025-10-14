@@ -1,4 +1,4 @@
-# <h1 align="center">Laporan Praktikum Modul 2 <br> Abstrak Data Type</h1>
+# <h1 align="center">Laporan Praktikum Modul 3 <br> Abstrak Data Type</h1>
 <p align="center">Rafi Maheswara - 103112400135</p>
 
 ## Dasar Teori
