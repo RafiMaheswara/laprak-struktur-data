@@ -69,7 +69,7 @@ Node *hapus(Node *root, int nilai) {
 }
 
 Node *update(Node *root, int lama, int baru) {
-    if (search(root, lama) != NULL) {  // FIX: ubah == menjadi !=
+    if (search(root, lama) != NULL) { 
         root = hapus(root, lama);
         root = insert(root, baru);
         cout << "Node " << lama << " diupdate menjadi " << baru << endl;
@@ -80,7 +80,7 @@ Node *update(Node *root, int lama, int baru) {
     return root;
 }
 
-void preOrder(Node *root) {  // FIX: ubah return type menjadi void
+void preOrder(Node *root) {  
     if (root != NULL) {
         cout << root->data << " ";
         preOrder(root->kiri);
@@ -88,7 +88,7 @@ void preOrder(Node *root) {  // FIX: ubah return type menjadi void
     }
 }
 
-void inOrder(Node *root) {  // FIX: ubah return type menjadi void
+void inOrder(Node *root) { 
     if (root != NULL) {
         inOrder(root->kiri);
         cout << root->data << " ";
@@ -96,7 +96,7 @@ void inOrder(Node *root) {  // FIX: ubah return type menjadi void
     }
 }
 
-void postOrder(Node *root) {  // FIX: ubah return type menjadi void
+void postOrder(Node *root) {  
     if (root != NULL) {
         postOrder(root->kiri);
         postOrder(root->kanan);
@@ -104,16 +104,16 @@ void postOrder(Node *root) {  // FIX: ubah return type menjadi void
     }
 }
 
-int main() {  // FIX: tambahkan int
+int main() {  
     Node *root = NULL;
     cout << "=== 1. INSERT NODE ===" << endl;
     root = insert(root, 10);
-    root = insert(root, 5);      // FIX: tambahkan root =
-    root = insert(root, 20);     // FIX: tambahkan root =
-    root = insert(root, 3);      // FIX: tambahkan root =
-    root = insert(root, 7);      // FIX: tambahkan root =
-    root = insert(root, 15);     // FIX: tambahkan root =
-    root = insert(root, 25);     // FIX: tambahkan root =
+    root = insert(root, 5);      
+    root = insert(root, 20);  
+    root = insert(root, 3);      
+    root = insert(root, 7);   
+    root = insert(root, 15);     
+    root = insert(root, 25);    
     cout << "Node berhasil ditambahkan." << endl;
 
     cout << "\n=== 2. TAMPILKAN NODE ===" << endl;
@@ -131,8 +131,8 @@ int main() {  // FIX: tambahkan int
 
     cout << "\n=== 3. TEST SEARCH ===" << endl;
     int cari1 = 7, cari2 = 99;
-    cout << "Cari " << cari1 << ": " << (search(root, cari1) ? "Ditemukan" : "Tidak Ada") << endl;  // FIX: tambah spasi
-    cout << "Cari " << cari2 << ": " << (search(root, cari2) ? "Ditemukan" : "Tidak Ada") << endl;  // FIX: tambah spasi
+    cout << "Cari " << cari1 << ": " << (search(root, cari1) ? "Ditemukan" : "Tidak Ada") << endl;  
+    cout << "Cari " << cari2 << ": " << (search(root, cari2) ? "Ditemukan" : "Tidak Ada") << endl;  
     
     cout << "\n=== 4. TEST UPDATE ===" << endl;
     root = update(root, 15, 17);
@@ -165,4 +165,5 @@ int main() {  // FIX: tambahkan int
     cout << endl;
     
     return 0;
+
 }
