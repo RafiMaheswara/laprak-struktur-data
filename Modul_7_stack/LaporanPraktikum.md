@@ -3,7 +3,7 @@
 
 ## Dasar Teori
 
-Berdasarkan ketiga referensi tersebut, Stack adalah struktur data linear yang beroperasi dengan prinsip LIFO (Last In, First Out), di mana elemen yang terakhir ditambahkan akan menjadi yang pertama diambil. Operasi utamanya meliputi push untuk menumpuk data di posisi teratas dan pop untuk mengambil data dari posisi tersebut. Dalam pemrograman C++, Stack dapat diimplementasikan secara manual menggunakan array atau linked list untuk memahami logikanya.
+Stack adalah struktur data linear yang beroperasi dengan prinsip LIFO (Last In, First Out), di mana elemen yang terakhir ditambahkan akan menjadi yang pertama diambil. Operasi utamanya meliputi push untuk menumpuk data di posisi teratas dan pop untuk mengambil data dari posisi tersebut. Dalam pemrograman C++, Stack dapat diimplementasikan secara manual menggunakan array atau linked list untuk memahami logikanya.
 
 ## Guided
 
